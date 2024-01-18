@@ -8,3 +8,9 @@ soluzione: questo progetto su github: https://github.com/brunneis/vader-multi ut
 
 Vantaggi: 1. è preciso. capisce con efficienza frasi positive, negative e neutre. 
 Nota bene: se analizza una frase in ita e la stessa frase in eng, da risultati leggermente diversi (punteggi 'neg' 'neu' 'pos' leggermente diversi). Io suppongo che sia perché 2 lingue diverse non possono mai essere tradotte ugualmente reciprocamente -> l'API di google non è perfetta.
+
+# finiamo con SPACY
+Svantaggi: 1. allora, spacy ce l'ha un modello in italiano:  it_core_news_sm. tuttavia, non è compatibile con il sentiment analysis!!! ho dovuto cercare e scaricarmi una libreria a parte (pattern) e usare pattern.it. 
+2. rispetto a vader, funziona con solo una lingua alla volta
+
+Vantaggi: sembra piu preciso di VADER. forse è dovuto al fatto che non usa google translate API. bisogna approfondire pattern.it
