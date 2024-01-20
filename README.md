@@ -14,3 +14,7 @@ Svantaggi: 1. allora, spacy ce l'ha un modello in italiano:  it_core_news_sm. tu
 2. rispetto a vader, funziona con solo una lingua alla volta
 
 Vantaggi: sembra piu preciso di VADER. forse è dovuto al fatto che non usa google translate API. bisogna approfondire pattern.it
+# Quale usare per il nostro scopo
+Dato che Vader è particolarmente adatto per l'analisi dei Social Media ed è progettato specificatamente per l'inglese,
+mentre Spacy è una libreria più generica per il Natural Language Processing e supporta molte lingue diverse. Per ciascuna lingua supportata, Spacy offre modelli specifici che possono essere caricati.
+Date queste considerazioni risulta opportuno utilizzare Spacy per il nostro scopo (informazioni su Vader:https://stackoverflow.com/questions/45275166/is-vader-sentimentintensityanalyzer-multilingual, informazioni su Spacy:spacy.io). 
