@@ -17,4 +17,4 @@ Vantaggi: sembra piu preciso di VADER. forse è dovuto al fatto che non usa goog
 # Quale usare per il nostro scopo
 Dato che Vader è particolarmente adatto per l'analisi dei Social Media ed è progettato specificatamente per l'inglese,
 mentre Spacy è una libreria più generica per il Natural Language Processing e supporta molte lingue diverse. Per ciascuna lingua supportata, Spacy offre modelli specifici che possono essere caricati.
-Date queste considerazioni risulta opportuno utilizzare Spacy per il nostro scopo (informazioni su Vader:https://stackoverflow.com/questions/45275166/is-vader-sentimentintensityanalyzer-multilingual, informazioni su Spacy:spacy.io). 
+Date queste considerazioni risulta opportuno utilizzare Spacy per il nostro scopo (informazioni su Vader:https://stackoverflow.com/questions/45275166/is-vader-sentimentintensityanalyzer-multilingual, informazioni su Spacy:https://spacy.io). 
