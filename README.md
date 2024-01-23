@@ -13,6 +13,10 @@ Nota bene: se analizza una frase in ita e la stessa frase in eng, da risultati l
 Svantaggi: 1. allora, spacy ce l'ha un modello in italiano:  it_core_news_sm. tuttavia, non è compatibile con il sentiment analysis!!! ho dovuto cercare e scaricarmi una libreria a parte (pattern) e usare pattern.it. 
 2. rispetto a vader, funziona con solo una lingua alla volta
 
+#FEEL IT
+https://huggingface.co/MilaNLProc/feel-it-italian-sentiment (non serve)
+https://huggingface.co/MilaNLProc/feel-it-italian-emotion (è piu interessante)
+
 Vantaggi: sembra piu preciso di VADER. forse è dovuto al fatto che non usa google translate API. bisogna approfondire pattern.it
 # Quale usare per il nostro scopo
 Dato che Vader è particolarmente adatto per l'analisi dei Social Media ed è progettato specificatamente per l'inglese,
