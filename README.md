@@ -22,3 +22,6 @@ https://huggingface.co/MilaNLProc/feel-it-italian-emotion (è piu interessante)
 Dato che Vader è particolarmente adatto per l'analisi dei Social Media ed è progettato specificatamente per l'inglese,
 mentre Spacy è una libreria più generica per il Natural Language Processing e supporta molte lingue diverse. Per ciascuna lingua supportata, Spacy offre modelli specifici che possono essere caricati.
 Date queste considerazioni risulta opportuno utilizzare Spacy per il nostro scopo (informazioni su Vader:https://stackoverflow.com/questions/45275166/is-vader-sentimentintensityanalyzer-multilingual, informazioni su Spacy:https://spacy.io). 
+
+
+# DATASET di parole preso da: https://github.com/sigmasaur/AnagramSolver
