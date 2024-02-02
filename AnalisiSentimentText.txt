@@ -41,7 +41,7 @@ Feel-It può rivelarsi molto utile per aziende e PMI che hanno una presenza digi
 Il dataset e il modello di Feel-It sono disponibili in open source sul web e sono descritti in un paper accademico peer-reviewed che è stato presentato a WASSA 2021 durante l’undicesimo Workshop on Computational Approaches to Subjectivity, Sentiment & Social Media Analysis della conferenza EACL.
 Feel-It si dimostra quindi adatto all’obiettivo di questo progetto. Oltre a identificare se il sentimento espresso in un testo è positivo o negativo, Feel-It è in grado di distinguere tra diverse emozioni. Questa capacità fornisce informazioni più dettagliate che possono aiutare a comprendere lo stato emotivo del criminale analizzando la chiamata telefonica intercettata. Inoltre, l’analisi delle emozioni può contribuire a capire il tipo di legame che esiste tra i due interlocutori in chiamata.
 
-Differenze tra VADER,Spacy e Feel-It
+Differenze tra VADER,Spacy e Feel-It e scelta del modello
 
 L’analisi del linguaggio naturale (NLP) è stata rivoluzionata da diversi modelli, tra i quali: il VADER Sentiment Analysis, il framework Spacy e Feel-It. Mentre tutti e tre si concentrano sull’esplorazione delle complessità del linguaggio umano, le loro architetture, metodologie e applicazioni variano significativamente.
 Il VADER Sentiment Analysis si distingue per il suo approccio basato su dizionari e regole sofisticate. Questo modello è principalmente adatto all’inglese e si concentra sulla valutazione del sentiment complessivo di un testo, prendendo in considerazione sia la polarità delle parole che l’intensità del sentimento.
