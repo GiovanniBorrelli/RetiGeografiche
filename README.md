@@ -15,13 +15,13 @@ Svantaggi: 1. allora, spacy ce l'ha un modello in italiano:  it_core_news_sm. tu
 Vantaggi: sembra piu preciso di VADER. forse è dovuto al fatto che non usa google translate API. bisogna approfondire pattern.it
 
 ### FEEL IT
+Vantaggi: Lingua italiana, informazioni sulle emozioni.
+Svantaggi: Addestrato tramite social media, questo potrebbe causare un leggero calo di accuratezza per altri campi di studio.
 https://huggingface.co/MilaNLProc/feel-it-italian-sentiment (non serve)
 https://huggingface.co/MilaNLProc/feel-it-italian-emotion (è piu interessante)
 
 # Quale usare per il nostro scopo
-Dato che Vader è particolarmente adatto per l'analisi dei Social Media ed è progettato specificatamente per l'inglese,
-mentre Spacy è una libreria più generica per il Natural Language Processing e supporta molte lingue diverse. Per ciascuna lingua supportata, Spacy offre modelli specifici che possono essere caricati.
-Date queste considerazioni risulta opportuno utilizzare Spacy per il nostro scopo (informazioni su Vader:https://stackoverflow.com/questions/45275166/is-vader-sentimentintensityanalyzer-multilingual, informazioni su Spacy:https://spacy.io). 
+Dato che Feel-It è in italiano e oltre a indicare se il sentimento è positivo o negativo fornisce anche informazioni sull'emozione che l'interlocutore prova risulta essere il più adatto per progetto.
 
 
 # DATASET di parole preso da: https://github.com/sigmasaur/AnagramSolver
