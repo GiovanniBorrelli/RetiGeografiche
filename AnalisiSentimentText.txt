@@ -59,6 +59,8 @@ sviluppati interamente o principalmente per la lingua inglese, questa problemati
 2)Il secondo problema, come già accennato, riguarda la presenza del dialetto napoletano all'interno delle intercettazioni. 
 Si è quindi deciso di controllare la percentuale di dialetto presente al loro interno. Per fortuna, i risultati sono stati positivi, evidenziando infatti una presenza non massiccia di parole dialettali.
 2.1)Riguardo la seconda problematica, non è stato semplice calcolare la giusta percentuale di parole dialettali contenute nelle intercettazioni,
-infatti si è dovuto trovare inanzitutto il giusto metodo per non prendere in considerazione la punteggiatura, anche per gli apostrofi si è dovuto
-procedere con uno specifico trattamento. In secondo momento ci si è resi conto che alcune parole italiane non venivano considerate tali a causa degli accenti sbagliati, il caso più comune è la presenza della parola "perchè" che nella forma corretta andrebbe scritta "perché", essendo questo un problema di scrittura si è
-fatto in modo che la parola "perchè" così come altre parole con la medesima problematica venissero giustamente contate come parole italiane.
+infatti si è dovuto trovare inanzitutto il giusto metodo per non prendere in considerazione la punteggiatura, anche per gli apostrofi e le virgolette si è dovuto
+procedere in modo che venissero ignorati durante il conteggio delle parole. 
+In secondo momento ci si è resi conto che alcune parole italiane non venivano considerate tali a causa degli accenti sbagliati, il caso più comune è la presenza della parola "perchè" che nella forma corretta andrebbe scritta "perché", essendo questo un problema di scrittura si è
+fatto in modo che la parola "perchè" così come altre parole con la medesima problematica venissero giustamente contate come parole italiane, per fare ciò durante
+il confronto delle parole si è ignorata la presenza dell'accento.
