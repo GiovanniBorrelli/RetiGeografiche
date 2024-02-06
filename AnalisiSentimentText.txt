@@ -13,7 +13,7 @@ Dati
 I dati utilizzati per le intercettazioni criminali provengono da un documento di custodia cautelare anonimizzato, appositamente selezionato per testare il modello in modo legale ed efficace. Questo documento contiene circa 30.000 frasi, una quantità sufficiente per valutare le capacità del modello. La principale sfida legata ai dati riguarda l'impiego del dialetto napoletano, il quale potrebbe aumentare il rischio di imprecisioni nelle risposte del modello. Tuttavia, va notato che la presenza del dialetto non è così frequente da compromettere completamente l'obiettivo del progetto.
 
 Per arrivare a questa conclusione si è effettuato un controllo utilizzando un dataset contenente tutte le parole italiane, il risultato ha mostrato che
-solamente il *PERCENTUALE PAROLE NAPOLETANE*% delle parole presenti nelle intercettazioni a disposizione non sono italiane, questo dato ci consente di ritenere applicabile l'utilizzo
+solamente il 2.34% delle parole presenti nelle intercettazioni a disposizione non sono italiane, questo dato ci consente di ritenere applicabile l'utilizzo
 di un modello che riconosce la lingua italiana senza compromettere in maniera significativa i risultati.
 
 Analisi del Sentiment
