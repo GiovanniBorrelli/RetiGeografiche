@@ -60,8 +60,14 @@ sviluppati interamente o principalmente per la lingua inglese, questa problemati
 Si è quindi deciso di controllare la percentuale di dialetto presente al loro interno. Per fortuna, i risultati sono stati positivi, evidenziando infatti una presenza non massiccia di parole dialettali.
 Inoltre, dato che Feel-It è basato sulla rete neurale BERT, cerca di capire anche il senso delle parole non conosciute utilizzando le parole vicine, il che rende il probelma del dialetto ancora meno ostacolante.
 2.1)Riguardo la seconda problematica, non è stato semplice calcolare la giusta percentuale di parole dialettali contenute nelle intercettazioni,
-infatti si è dovuto trovare inanzitutto il giusto metodo per non prendere in considerazione la punteggiatura, anche per gli apostrofi e le virgolette si è dovuto
-procedere in modo che venissero ignorati durante il conteggio delle parole. 
+si è trovato inanzitutto un pool contenente tutte le parole italiane, ma oltre le parole è servito anche un pool di tutti i nomi italiani, questi due pool
+sono serviti per confrontarli con le parole delle intercettazioni e quindi constatare se le parole presenti sono italiane oppure no, nel dizionario di parole
+italiane sono stati inseriti anche i nomi di alcune marche di auto per permetterne il riconoscimento durante il confronto.
+Si è dovuto trovare inanzitutto il giusto metodo per non prendere in considerazione la punteggiatura, anche per gli apostrofi e le virgolette si è dovuto
+procedere in modo che venissero ignorati durante il confronto delle parole. 
 In secondo momento ci si è resi conto che alcune parole italiane non venivano considerate tali a causa degli accenti sbagliati, il caso più comune è la presenza della parola "perchè" che nella forma corretta andrebbe scritta "perché", essendo questo un problema di scrittura si è
 fatto in modo che la parola "perchè" così come altre parole con la medesima problematica venissero giustamente contate come parole italiane, per fare ciò durante
 il confronto delle parole si è ignorata la presenza dell'accento.
+Abbiamo poi notato che in molti casi era presenta la parola "inc" che serve per indicare una parte dell'intercettazione non compresa e quindi non trascritta,
+questa parola veniva contata quindi come parola non italiana, ma essendo che lo scopo è capire la presenza delle parole in dialetto si è deciso
+di ignorare anche questa parola durante il conteggio delle parole italiane e dialettali.
