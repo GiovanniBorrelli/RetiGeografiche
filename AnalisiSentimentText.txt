@@ -58,6 +58,7 @@ Problematiche
 sviluppati interamente o principalmente per la lingua inglese, questa problematica è stata risolta dall'individuazione del modello Feel-It;
 2)Il secondo problema, come già accennato, riguarda la presenza del dialetto napoletano all'interno delle intercettazioni. 
 Si è quindi deciso di controllare la percentuale di dialetto presente al loro interno. Per fortuna, i risultati sono stati positivi, evidenziando infatti una presenza non massiccia di parole dialettali.
+Inoltre, dato che Feel-It è basato sulla rete neurale BERT, cerca di capire anche il senso delle parole non conosciute utilizzando le parole vicine, il che rende il probelma del dialetto ancora meno ostacolante.
 2.1)Riguardo la seconda problematica, non è stato semplice calcolare la giusta percentuale di parole dialettali contenute nelle intercettazioni,
 infatti si è dovuto trovare inanzitutto il giusto metodo per non prendere in considerazione la punteggiatura, anche per gli apostrofi e le virgolette si è dovuto
 procedere in modo che venissero ignorati durante il conteggio delle parole. 
