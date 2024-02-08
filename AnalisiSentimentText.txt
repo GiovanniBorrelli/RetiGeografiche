@@ -63,6 +63,8 @@ Inoltre, dato che Feel-It è basato sulla rete neurale BERT, cerca di capire anc
 si è trovato inanzitutto un pool contenente tutte le parole italiane, ma oltre le parole è servito anche un pool di tutti i nomi italiani, questi due pool
 sono serviti per confrontarli con le parole delle intercettazioni e quindi constatare se le parole presenti sono italiane oppure no, nel dizionario di parole
 italiane sono stati inseriti anche i nomi di alcune marche di auto per permetterne il riconoscimento durante il confronto.
+Bisogna notare che nonostante queste accortezze è comunque presente il nome di alcuni locali non presenti nei pool, quindi
+il loro nome verrà erroneamente contato come parola in dialetto.
 Si è dovuto trovare inanzitutto il giusto metodo per non prendere in considerazione la punteggiatura, anche per gli apostrofi e le virgolette si è dovuto
 procedere in modo che venissero ignorati durante il confronto delle parole. 
 In secondo momento ci si è resi conto che alcune parole italiane non venivano considerate tali a causa degli accenti sbagliati, il caso più comune è la presenza della parola "perchè" che nella forma corretta andrebbe scritta "perché", essendo questo un problema di scrittura si è
