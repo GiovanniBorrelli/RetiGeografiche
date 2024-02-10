@@ -56,19 +56,21 @@ Feel-It, sviluppato da ricercatori dell’Università Bocconi di Milano, è uno 
 Per lo scopo del progetto, Feel-It risulta essere il più adatto. Questo perché, oltre a fornire informazioni sulla positività o negatività del sentimento, Feel-It è in grado di distinguere tra diverse emozioni. Inoltre, Feel-It è stato addestrato su frasi italiane, il che lo rende particolarmente utile per l’analisi del linguaggio naturale in italiano.
 
 Problematiche e conseguenti trattamenti
+0.1) il problema iniziale è stato quello di estrarre le conversazioni dal file di testo anonimizzato, questo perché il file era formattato in modo inadatto all'estrazione automatica delle frasi, con molti invii a capo casuali e tante conversazioni che partivano a metà riga.
 1)Il primo problema è stato individuare un modello adatto alla lingua italiana, infatti i principali modelli di analisi del sentiment sono stati
 sviluppati interamente o principalmente per la lingua inglese, questa problematica è stata risolta dall'individuazione del modello Feel-It;
 2)Il secondo problema, come già accennato, riguarda la presenza del dialetto napoletano all'interno delle intercettazioni. 
-Si è quindi deciso di controllare la percentuale di dialetto presente al loro interno. Per fortuna, i risultati sono stati positivi, evidenziando infatti una presenza non massiccia di parole dialettali.
+Si è quindi deciso di controllare la percentuale di dialetto presente al loro interno. Per fortuna, i risultati sono stati positivi, evidenziando infatti una presenza esigua di parole dialettali.
 Inoltre, dato che Feel-It è basato sulla rete neurale BERT, cerca di capire anche il senso delle parole non conosciute utilizzando le parole vicine, il che rende il probelma del dialetto ancora meno ostacolante.
 2.1)Riguardo la seconda problematica, non è stato semplice calcolare la giusta percentuale di parole dialettali contenute nelle intercettazioni,
 si è trovato inanzitutto un pool contenente tutte le parole italiane, ma oltre le parole è servito anche un pool di tutti i nomi italiani, questi due pool
-sono serviti per confrontarli con le parole delle intercettazioni e quindi constatare se le parole presenti sono italiane oppure no, nel dizionario di parole
+sono serviti per fare un confronto tra le parole delle intercettazioni e quindi constatare se le parole presenti sono italiane oppure no. Nel dizionario di parole
 italiane sono stati inseriti anche i nomi di alcune marche di auto per permetterne il riconoscimento durante il confronto.
 Bisogna notare che nonostante queste accortezze è comunque presente il nome di alcuni locali non presenti nei pool, quindi
 il loro nome verrà erroneamente contato come parola in dialetto.
 Si è dovuto poi trovare il giusto metodo per non prendere in considerazione la punteggiatura, anche per gli apostrofi e le virgolette si è dovuto
 procedere in modo che venissero ignorati durante il confronto delle parole. 
+Infatti nel dizionario delle parole italiane alcune parole avevano l'apostrofo, e il codice che abbiamo scritto escludeva in automatico tutta la punteggiatura, quindi abbiamo dovuto aggiungere una ulteriore non-esclusione per l'apostrofo. 
 In secondo momento ci si è resi conto che alcune parole italiane non venivano considerate tali a causa degli accenti sbagliati, il caso più comune è la presenza della parola "perchè" che nella forma corretta andrebbe scritta "perché", essendo questo un problema di scrittura si è
 fatto in modo che la parola "perchè" così come altre parole con la medesima problematica venissero giustamente contate come parole italiane, per fare ciò durante
 il confronto delle parole si è ignorata la presenza dell'accento.
