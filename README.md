@@ -1,27 +1,31 @@
-# RetiGeografiche
+# Analisi del Sentimento in Italiano
 
-Testing di VADER, SPICY e Feel-It per l'analisi del sentiment di frasi italiane.
-# iniziamo da VADER
+Questo repository contiene un progetto per l'analisi del sentiment di frasi in lingua italiana utilizzando diverse librerie e modelli, tra cui VADER, Spacy e Feel-It. L'obiettivo principale è valutare le prestazioni di queste risorse nell'identificare e classificare il sentiment delle frasi italiane.
 
-Svantaggi: 1. Funziona solo in inglese.
-soluzione: questo progetto su github: https://github.com/brunneis/vader-multi utilizza l'API di google translate. Nota bene: capisce automaticamente il linguaggio da tradurre
+## Librerie e Modelli Utilizzati
 
-Vantaggi: 1. è preciso. capisce con efficienza frasi positive, negative e neutre. 
-Nota bene: se analizza una frase in ita e la stessa frase in eng, da risultati leggermente diversi (punteggi 'neg' 'neu' 'pos' leggermente diversi). Io suppongo che sia perché 2 lingue diverse non possono mai essere tradotte ugualmente reciprocamente -> l'API di google non è perfetta.
+### VADER
 
-# continuiamo con SPACY
-Svantaggi: 1. allora, spacy ce l'ha un modello in italiano:  it_core_news_sm. tuttavia, non è compatibile con il sentiment analysis!!! ho dovuto cercare e scaricarmi una libreria a parte (pattern) e usare pattern.it. 
-2. rispetto a vader, funziona con solo una lingua alla volta
-Vantaggi: sembra piu preciso di VADER. forse è dovuto al fatto che non usa google translate API. bisogna approfondire pattern.it
+VADER è una libreria ampiamente utilizzata per l'analisi del sentiment in inglese. Tuttavia, per estendere la sua applicazione all'italiano, è stato utilizzato un progetto di traduzione automatica basato sull'API di Google Translate. Si è notato che i punteggi di sentiment possono variare leggermente tra le frasi originali in italiano e le loro traduzioni in inglese, presumibilmente a causa delle differenze linguistiche e delle limitazioni dell'API.
 
-# finiamo con FEEL IT
-Vantaggi: Lingua italiana, informazioni sulle emozioni.
-Svantaggi: Addestrato tramite social media, questo potrebbe causare un leggero calo di accuratezza per altri campi di studio.
-https://huggingface.co/MilaNLProc/feel-it-italian-sentiment (non serve)
-https://huggingface.co/MilaNLProc/feel-it-italian-emotion (è piu interessante)
+### Spacy
 
-# Quale usare per il nostro scopo
-Dato che Feel-It è in italiano e oltre a indicare se il sentimento è positivo o negativo fornisce anche informazioni sull'emozione che l'interlocutore prova risulta essere il più adatto per progetto.
+Spacy offre un modello in italiano (it_core_news_sm), ma non include funzionalità di sentiment analysis. Pertanto, per effettuare l'analisi del sentiment in italiano, è stata necessaria l'implementazione di una libreria aggiuntiva (pattern.it). Anche se Spacy lavora solo con una lingua alla volta, sembra offrire una precisione superiore rispetto a VADER, forse grazie all'assenza dell'uso dell'API di traduzione di Google.
 
+### Feel-It
 
-# DATASET di parole preso da: https://github.com/sigmasaur/AnagramSolver
+Feel-It è un modello specifico per l'italiano che fornisce non solo informazioni sul sentiment (positivo o negativo) ma anche sulle emozioni associate a una determinata frase. Tuttavia, va notato che questo modello è stato addestrato principalmente su dati provenienti dai social media, il che potrebbe influire leggermente sulla sua accuratezza in altri contesti.
+
+## Dataset
+
+Il dataset utilizzato per valutare le prestazioni di queste librerie e modelli è stato ottenuto da [AnagramSolver](https://github.com/sigmasaur/AnagramSolver). Questo dataset comprende una vasta gamma di parole italiane e sarà utilizzato per testare l'efficacia dei vari approcci di analisi del sentiment.
+
+## Scopo del Progetto
+
+L'obiettivo principale di questo progetto è determinare quale tra le librerie e i modelli considerati sia il più adatto per l'analisi del sentiment in italiano. In particolare, si cerca di valutare la precisione e l'affidabilità di ciascun approccio in diverse situazioni linguistiche e contesti di utilizzo.
+
+## Contributi e Feedback
+
+Siamo aperti a contributi e feedback da parte della comunità. Se hai suggerimenti per migliorare questo progetto o desideri condividere le tue esperienze con l'analisi del sentiment in italiano, ti invitiamo a partecipare alla discussione e a proporre eventuali modifiche.
+
+Grazie per il tuo interesse nel nostro progetto!
