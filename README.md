@@ -1,3 +1,35 @@
+# ENGLISH
+
+### Feel-It
+
+Feel-It is a language model specifically designed for Italian, providing information not only on sentiment (positive or negative) but also on the emotions associated with a given sentence. It's worth noting that this model was primarily trained on data from social media, which might slightly impact its accuracy in other contexts.
+
+## Dataset
+
+The dataset used to evaluate the performance of these libraries and models was obtained from [AnagramSolver](https://github.com/sigmasaur/AnagramSolver). This dataset includes a wide range of Italian words and will be used to test the effectiveness of various sentiment analysis approaches.
+
+## Project Scope
+
+Natural Language Processing (NLP) plays a crucial role in understanding the complex dynamics of criminal interceptions. However, the effectiveness of such analysis can be compromised by various challenges, including the presence of Neapolitan dialect within conversations and the limited amount of available data. Among VADER, Spacy, and Feel-It, Feel-It was chosen due to its additional capability to analyze the emotion of a sentence (joy, anger, sadness, fear). Therefore, in this context, the present study aims to use the sentiment analysis model - Feel-It - trained on Italian sentences to extract useful information from criminal interceptions. Through a careful analysis of the text in conversations, the goal is to understand the emotional state of the individuals involved, their motivations, and the relationships between them. However, limitations related to linguistic variety and data quality require a careful and multidisciplinary approach to maximize the utility of the obtained information. In conclusion, this study aims to contribute to the understanding of criminal dynamics through advanced natural language analysis, providing valuable insights for investigative and legal work.
+
+## Tutorial
+
+(Last tested - February 18, 2024)
+
+| Colab | Info |
+| --- | --- |
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GiovanniBorrelli/RetiGeografiche/blob/main/2%29%20Model%20(Feel-It)%20Training/UseFeel-It.ipynb) | Feel-It for criminal interceptions
+
+You need to use the `input.xlsx` file containing all the phrases to be analyzed. The code will generate the `output_with_emotions_and_sentiments.xlsx` file.
+
+## Contributions and Feedback
+
+We welcome contributions and feedback from the community. If you have suggestions to improve this project or want to share your experiences with sentiment analysis in Italian, please join the discussion and propose any necessary changes.
+
+Thank you for your interest in our project!
+
+----------------------
+# ITALIANO
 ### Feel-It
 
 Feel-It è un modello specifico per l'italiano che fornisce non solo informazioni sul sentiment (positivo o negativo) ma anche sulle emozioni associate a una determinata frase. Tuttavia, va notato che questo modello è stato addestrato principalmente su dati provenienti dai social media, il che potrebbe influire leggermente sulla sua accuratezza in altri contesti.
